@@ -20,9 +20,11 @@ Check the packages needed or simply run the command
 
 ## Experiments
 ***Dataset***
+
 Download the preprocessed [**datasets**](https://drive.google.com/open?id=1Mv1GR8Z54M-BCAhRl5shaD2CHGYE2dVq)
 
 ***Reproducibility***
+
 We provide the trained [**checkpoint**](https://drive.google.com/open?id=1E3aTZICLUNlwiEEaryStpX_HXoZeyNHK) of our VLM. 
 
 Test model: choose one task from (mt, summarization, dialogue, qa, nlg].
@@ -31,6 +33,7 @@ Test model: choose one task from (mt, summarization, dialogue, qa, nlg].
 ```
 
 ***Fine tune GPT-2***
+
 Train machine translation:
 ```console
 ❱❱❱ python ./train.py --gradient_accumulation_steps=4 --max_history=2 --train_batch_size=8 --valid_batch_size=8 --n_epochs 8 --task mt --dataset_path data/NMT/data_en_ge.json
@@ -43,6 +46,7 @@ Test machine translation:
 Check run.sh to run other tasks
 
 ***VLM train Adapters and Task embeddings***
+
 Train machine translation without knowledge distillation
 ```console
 ❱❱❱ python ./train.py --gradient_accumulation_steps=4 --max_history=2 --train_batch_size=8 --valid_batch_size=8 --n_epochs 8 --task mt --dataset_path data/NMT/data_en_ge.json --adapter_bottleneck 300 --lr 0.0005
@@ -61,6 +65,7 @@ Test machine traslation:
 Check run.sh to run other tasks
 
 ***Combine all the adapters and task embedding into single model***
+
 Line 68 of combine_all.py to provide the list of checkpoint
 ```console
 ❱❱❱ python combine_all.py
@@ -73,6 +78,7 @@ The above scripts illustrate how to train VLM continuously when tasks arrive seq
 
 
 ***Multitask training VLM***
+
 When all the tasks available at the same time.
 ```console
 ❱❱❱ python ./train_vlm.py --gradient_accumulation_steps=16 --train_batch_size=1 --valid_batch_size=1 --n_epochs 3
