@@ -3,6 +3,20 @@
 
 <img align="right" src="plot/HKUST.jpg" width="12%">
 
+This is the implementation of the paper:
+
+**Exploring Versatile Generative Language Model Via Parameter-Efficient Transfer Learning**. [**Zhaojiang Lin**](https://zlinao.github.io/), [**Andrea Madotto**](https://andreamad8.github.io), Pascale Fung  [[PDF]](https://arxiv.org/pdf/2004.03829.pdf)
+
+If you use any source codes or datasets included in this toolkit in your work, please cite the following paper. The bibtex is listed below:
+<pre>
+@article{lin2020exploring,
+  title={Exploring Versatile Generative Language Model Via Parameter-Efficient Transfer Learning},
+  author={Lin, Zhaojiang and Madotto, Andrea and Fung, Pascale},
+  journal={arXiv preprint arXiv:2004.03829},
+  year={2020}
+}
+</pre>
+
 ## Abstract
 Fine-tuning pre-trained generative language models to down-stream language generation tasks have shown promising results. However, it comes with the cost of having a single, large, model for each task, which is not ideal in low-memory/power scenarios (e.g., mobile). In this work, we propose an effective way for fine-tuning multiple down-stream generation tasks simultaneously using a single, large pre-trained model. The experiments in five diverse language generation tasks show that by just using an additional 2-3% parameters for each task, our model can maintain or even improve the performance of fine-tuning the whole model.
 
