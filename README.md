@@ -5,7 +5,7 @@
 
 This is the implementation of the paper:
 
-**Exploring Versatile Generative Language Model Via Parameter-Efficient Transfer Learning**. [**Zhaojiang Lin**](https://zlinao.github.io/), [**Andrea Madotto**](https://andreamad8.github.io), Pascale Fung  [[PDF]](https://arxiv.org/pdf/2004.03829.pdf)
+**Exploring Versatile Generative Language Model Via Parameter-Efficient Transfer Learning**. [**Zhaojiang Lin**](https://zlinao.github.io/), [**Andrea Madotto**](https://andreamad8.github.io), Pascale Fung **Findings of EMNLP 2020** [[PDF]](https://arxiv.org/pdf/2004.03829.pdf)
 
 If you use any source codes or datasets included in this toolkit in your work, please cite the following paper. The bibtex is listed below:
 <pre>
